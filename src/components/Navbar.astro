@@ -1,0 +1,156 @@
+---
+import Hamburger from 'hamburger-react';
+
+
+
+
+
+const items = [
+  {
+    title: "Home",
+    path: "/",
+  },
+  {
+    title: "Rat Friendly",
+    path: "/places",
+  },
+  {
+    title: "Blog",
+    path: "/index",
+  },
+  {
+    title: "Salidas",
+    path: "/vets",
+  },
+  {
+    title: "Veterinarias",
+    path: "/vets",
+  },
+  {
+    title: "Quienes somos",
+    path: "/#aboutus",
+  },
+  {
+    title: "Contacto",
+    path: "/contact",
+  },
+];
+
+---
+
+
+<div class=" bg-zinc-900 text-white ">
+  <div class=" header p-5 m-2 font-semibold ">RAT FRIENDLY.ORG</div>
+  
+      <nav>
+        <input type="checkbox" id="check"/>
+        <label for="check" class="bar-btn">
+          <Hamburger/>
+
+        </label>
+        
+        <ul class="nav-menu">
+          {items.map((item, index) => (
+            <li class={index === 0 ? 'active bg-rose-400' : ''}>
+              <a class="font-semibold uppercase text-base p-2 rounded-sm" href={item.path}>
+                {item.title}
+              </a>
+            </li>
+          ))}
+        </ul>
+        
+      </nav>
+    </div>
+  
+    <style>
+     
+      *{
+        padding:0;
+        margin:0;
+        text-decoration:none;
+        box-sizing:border-box;
+      }
+      .header{
+        width: 100%;
+        height: auto;
+      }
+      nav {
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .bar-btn{
+        font-size: 25px;
+        color:#ffff;
+        cursor: pointer;
+      }
+      .nav-menu{
+        position:fixed;
+        width: 100%;
+        height: 0;
+        top:100px;
+        background: rgba(0, 0, 0, 0.95);
+        text-align: center;
+        transition: all 0.5s;
+      }
+      
+      .nav-menu li{
+        display:none;
+        line-height: 30px;
+        margin:10px 0;
+        transition: all 0.5s;
+      }
+    
+      .nav-menu li a{
+        color:#ffff;
+        font-size:20px;
+        text-transform: uppercase;      
+
+      }
+      #check {display:none;
+      }
+      #check:checked ~ .nav-menu {
+        height:100vh;
+      }
+      #check:checked ~ .nav-menu li {
+        display:block;
+      }
+
+    @media screen and (min-width:768px) {
+          nav{
+            height: 20px;
+          }
+          .bar-btn{
+            display: none;
+          }
+          .nav-menu {
+            position: relative;
+            height: 100px;
+            top: 0;
+            background:none;
+            transition: none;
+            text-align:right;
+            margin-right: 1em;
+          }
+          #check {display:none;
+      }
+          .nav-menu li {
+            display: inline;
+            line-height: 5px;
+            margin: 0.5em;
+            transition: none;
+          }
+            .nav-menu li a{
+              font-size: 20px;
+              
+            }
+            .nav-menu li a:hover{
+              background-color: rgb(251 113 133);
+            }
+            
+            }
+    </style>
+
+

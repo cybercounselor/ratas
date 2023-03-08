@@ -1,0 +1,26 @@
+---
+import {projects} from "../../config/projects.json";
+---
+<h2 class="text-5xl font-bold my-5"></h2>
+
+{   
+    projects.map((project) => (
+        <div class="flex flex-col mb-2 text-center md:text-left md:flex-row">
+            <div class="flex-1 p-2 ">
+                <h2 class="font-bold text-2xl my-5 text-rose-400">
+                    {project.title}</h2>
+                <p class="my-1">{project.description}</p>
+                <p>{project.lista}</p>
+                
+            </div>
+            
+            <div class="flex-1 p-2">
+                <img src={project.image} class="w-72 m-auto rounded-full border-2 shadow-xl border-rose-300/100 max-h-72"/>
+                 
+            </div>
+                <a href={project.btlink} class="bg-sky-400/75 hover:bg-gradient-to-b from-cyan-300 to-red-300" > <button class="font-semibold w-24 min-w-full hover:decoration-4 "> {project.button} </button></a>
+        </div>
+            
+    ))
+}
+

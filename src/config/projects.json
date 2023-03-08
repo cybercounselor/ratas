@@ -1,0 +1,30 @@
+
+{
+"projects":[
+    {
+        "title":"Cerfificar mi negocio",
+        "description":"Envia un mensaje con los datos de tu negocio, y Roerto se presentará con sus amigos. Si todo es rico y nadie se asusta, tu negocio será incluído en nuestra lista. Dejarémos un sticker del certificado y compartiremos en nuestras redes toda la experiencia. Luego seguiremos compartiendo  cada vez que otra rata amigable visite tu negocio y nos etiquete. Si te gusta la idea, contactanos para coordinar una visita.",
+        "image": "images/certificado.png",
+        "button":"CERTIFICAR AHORA",
+        "btlink":"/contact"
+    },
+
+    {
+        "title":"Nombres para ratas",
+        "description":"No le pongas Ratatouille!",
+        "lista":["\nRatbril,\n","\nRatdonai,\n","\nRoerta,\n","\nRoerto,\n","\nRatadria,\n","\nRatiel,\n","\nRatael,\n","\nFlorrata,\n","\nJosé Rata,\n","\nRatalupe,\n","\nIrata,\n","\nJuan Rata,\n","\nRatbella,\n","\nLaurato,\n","\nLe Rat,\n","\nMarat,\n","\nRocky Ratboa,\n","\nRatalia,\n","\nRatmelia,\n","\nRatfael,\n","\nRatmiro,\n","\nRatul,\n","\nRatquel,\n","\nRóer,\n","\nSeñor Rata,\n","\nSeñora Rata,\n","\nRatiana,\n","\nRatuccino,\n","\nRatiago,\n","\nMoonrat,\n","\nRat Nicholson,\n","\nRatvlimir,\n","\nRóert DeNiro,\n","\nRatczinky,\n El Unarata,\n","\nJulian Ratssange,\n","\nAlan Ratts,\n","\nRatvier,\n","\nRatrix,\n","\nRatsterdam,\n","\nRatallica,\n","\nRatburgo,\n","\nRatzilla,\n","\nRatsobia,\n","\nRatana,\n","\nRat Daniels,\n","\nRat Max,\n","\nRatmanifov,\n","\nRathoben,\n","\nRat Pitt,\n","\nRatlantida,\n","\nRatenas,\n","\nRatanito,\n","\nMc Rata,\n","\nMad Rat,\n","\nRatnark,\n","\nRatanarock,\n","\nRatferatu,\n","\nRatcula,\n","\nRat Lebowsky,\n","\nRatosofía,\n","\nRataia,\n","\nRatucho,\n","\nRatdolf\n", "\nRatricia,\n","\nRatilda.\n"]
+        ,
+        "image": "images/nombresParaRatas.jfif",
+        "button": "AGREGA EL TUYO"
+    },
+   
+    {
+        "title":"Cybercounselor",
+        "description":"Este sitio fue desarrollado por Cybercounselor, su página está llena de ratas cyberpunks. Visítalo.",
+        "image": "images/rat.jfif",
+        "button":"\n+\nRATAS\n!!! ",
+        "btlink":"https://cybercounselor.dev"
+    }
+    
+]
+}

@@ -1,0 +1,91 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout title="La salud de las ratas">
+  <h1 class="mb-4 ml-3 font-bold">LA SALUD DE LAS RATAS</h1>
+  <div class="grid grid-cols-1 sm:grid-cols-2 sm:w-full relative">
+    <div class="grid grid-cols-1 w-5/6 mr-5 ml-2 gap-3">
+      <h2 class="ml-3">Veterinarias que atienden ratas en Buenos Aires</h2>
+      <Card title="Veterinaria Panda" body="fddgdgfdg" href="#" />
+      <Card title="Dra Celeste" body="fddgdgfdg" href="#" />
+      <Card title="DISPONIBLE" body="Para aparecer envie un correo" href="#" />
+      <Card title="DISPONIBLE" body="Para aparecer envie un correo" href="#" />
+    </div>
+
+    <div class="background-image my-4 ml-4 relative">
+      <p class="py-4 bg-zinc-500/60 px-5 w-full text-center absolute bottom-0">
+        Unite para conocer a otras personas que tienen ratas<button
+          class="bg-sky-500/75 px-5 py-2 hover:bg-gradient-to-b from-cyan-300 to-red-300 font-bold rounded-xl w-full"
+        >
+          FORO
+        </button>
+      </p>
+    </div>
+
+    <div class="m-6 ml-2 p-4 rounded-xl border-4">
+      <h2 class="my-2 ml-3 font-bold">
+        Que hacer hasta llegar a la veterinaria
+      </h2>
+      <ul class="list-disc list-inside">
+        <li class="m-2">
+          Mantene a la rata en un lugar donde se sienta segura, una caja pequena
+          con agujeritos para respirar estara bien. Pon un trapito si hace frio.
+        </li>
+        <li>
+          No muevas mucho la caja ni hagas ruidos fuertes. Tienen buen oido y
+          reflejos, se ponen nerviosas con facilidad.
+        </li>
+      </ul>
+
+      <style>
+        .background-image {
+          background-image: url("images/veterianaria_de_ratas.jpg");
+          background-size: 100%;
+          background-position: right;
+          background-repeat: no-repeat;
+        }
+        @media screen and (max-width: 640px) {
+          .background-image {
+            display: block;
+          }
+
+          .background-image {
+            background-position: center;
+            background-size: cover;
+            height: 300px;
+          }
+        }
+      </style>
+    </div>
+  </div>
+
+  <section>
+    <h2 class="font-bold ml-3">ALIMENTACION</h2>
+    <table class=" m-2 bg-rose-500/95 text-white rounded-md p-5 ">
+      <caption>Alimentación de las ratas</caption>
+      <thead>
+        <tr>
+          <th> <img src="#" alt=""> X</th>
+          <th>Alimentos</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-3">
+          <td class="font-bold">Alimentos adecuados</td>
+          <td>Comida para ratas<br>Frutas: manzanas, plátanos, peras, melón, fresas, frambuesas, arándanos, kiwi, mango, piña, papaya, etc.<br>Verduras: brócoli, zanahorias, calabaza, calabacín, pepino, espinacas, acelgas, lechuga, tomate, pimiento, etc.<br>Proteína: pollo, pavo, pescado, carne de res, huevos, queso, yogur, etc.<br>Grasas saludables: semillas de lino, semillas de calabaza, nueces, almendras, avellanas, etc.</td>
+        </tr>
+        <tr class="m-4">
+          <td class="font-bold ">Solo un poco y espaciado en el tiempo</td>
+          <td>Brócoli<br>Frutos secos: nueces, almendras, avellanas, etc.<br>Pan integral</td>
+        </tr>
+        <tr>
+          <td class="font-bold text-red-500">Prohibido</td>
+          <td>Golosinas procesadas y chocolates<br>Comida chatarra<br>Cebolla y ajo<br>Alimentos picantes o salados</td>
+        </tr>
+      </tbody>
+    </table>
+    
+  </section>
+</Layout>
