@@ -15,5 +15,11 @@ import netlify from "@astrojs/netlify/functions";
 export default defineConfig({
   integrations: [tailwind(), react(), alpinejs()],
   output: "server",
-  adapter: netlify()
+  adapter: netlify(),
+  build: {
+    rollupOptions: {
+      external: ['@astrojs/rss']
+    }
+  }
+  
 });
