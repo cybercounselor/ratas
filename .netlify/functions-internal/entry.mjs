@@ -2,7 +2,7 @@ import * as adapter from '@astrojs/netlify/netlify-functions.js';
 import React, { createElement } from 'react';
 import ReactDOM from 'react-dom/server';
 import { g as server_default, h as deserializeManifest } from './chunks/astro.7e6f8618.mjs';
-import { _ as _page0, a as _page1, b as _page2, c as _page3 } from './chunks/pages/all.97deb2da.mjs';
+import { _ as _page0, a as _page1, b as _page2, c as _page3 } from './chunks/pages/all.29afe77a.mjs';
 import 'mime';
 import 'cookie';
 import 'html-escaper';

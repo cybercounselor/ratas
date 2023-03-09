@@ -1,0 +1,34 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Cardd from '../components/Cardd.astro';
+interface MarkdownFrontmatter {
+  date: number;
+  pubDate: number;
+}
+
+const title = 'Blog de ratas';
+const description = 'El blog de las ratas';
+const seoDescription = 'Vivir con ratas';
+
+const allPosts = await Astro.glob<MarkdownFrontmatter>('./posts/*.md');
+const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf());
+---
+ <Layout title={title} description={seoDescription} >
+ 
+    <article class="max-w-6xl mx-auto px-3">
+       <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8"       data-test="articles-section">
+        {sortedPosts.map(p => <div class="col-span-1">
+          <Cardd post={p} />
+          </div>)}
+        </section>
+    </article>
+
+
+  <section class="flex space-x-8 justify-center text-xl pt-8 font-bold">
+    <a href="/posts" class="mr-8" data-test="see-all-link">
+      Todos los posts<span class="squiggle">&rarr;</span>
+    </a>
+  </section>
+
+</Layout>
+

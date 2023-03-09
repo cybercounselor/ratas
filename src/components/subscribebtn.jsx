@@ -18,7 +18,7 @@ function Button() {
   return (
     <>
     <div className="flex flex-col">
-      <input class="text-black rounded-lg p-3 m-2 form-submit-on-enter"
+      <input className="text-black rounded-lg p-3 m-2 form-submit-on-enter"
         type="email"
         placeholder="Ingresa tu correo"
         value={email}
