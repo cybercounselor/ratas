@@ -1,19 +1,17 @@
-  ---
+---
   import Layout from "../layouts/Layout.astro";
-  import places from "../config/places.json";
-  ---
-
-  
-<Layout title="Rat Friendly">  
+  import Places from "../config/places.json";
+---  
+<Layout title="Rat Friendly" description="">  
  
-  <div class="bg-red-400  grid grid-cols-1  sm:grid-cols-2 m-0">
+  <div class="bg-red-300  grid grid-cols-1  sm:grid-cols-2 m-0">
       <img class="h-64 w-auto object-cover rounded-full m-5 " src="images/certificado.png" alt="certificado rat friendly">
   <div class="my-0">
-      <p class="h-auto w-auto font-semibold p-5">La certificación Rat Friendly nació de nuestra experiencia de salir a pasear con nuestras ratas. Afortunadamente, la mayoría de los lugares son respetuosos, especialmente después de comprobar que nuestras ratas no son nada parecidas a las que se ven en la ficción. Las personas se sorprenden al descubrir que son cariñosas, tranquilas y hermosas.</p>
+      <p class="h-auto w-auto p-5">La certificación Rat Friendly nació de nuestra experiencia de salir a pasear con nuestras ratas. Afortunadamente, la mayoría de los lugares son respetuosos, en especial después de comprobar que las ratas no son nada parecidas a las que se ven en la ficción. Las personas se sorprenden al descubrir que son cariñosas, tranquilas y hermosas.</p>
     
-      <p class="h-auto w-auto font-semibold p-5">Sin embargo, todavía hay prejuicios y maltratos hacia las ratas de compañía, y  no sabemos dónde encontraremos este tipo de situaciones. Por lo tanto, inspirados en el ya conocido "Pet Friendly", y dado que esta categoría solo incluye a los perros, consideramos necesario crear una certificación Rat Friendly.</p>
+      <p class="h-auto w-auto p-5">Sin embargo, todavía hay prejuicios y maltratos hacia las ratas de compañía, y  no sabemos dónde encontraremos este tipo de situaciones. Por lo tanto, inspirados en el ya conocido "Pet Friendly", y dado que esta categoría solo incluye a los perros, consideramos necesario crear una certificación Rat Friendly.</p>
     
-      <p class="h-auto w-auto font-semibold p-5">Queremos incluir también a hambsters, cobayos y hurones, que aunque no son ratas, son igualmente bienvenidos. 
+      <p class="h-auto w-auto p-5">Los hamsters, cobayos y hurones, aunque no son ratas, son igualmente bienvenidos. 
       </p>
       <button class="bg-sky-500/75 m-4 px-3 py-2 font-bold rounded-xl">Certificar mi negocio</button>
     </div>
@@ -26,7 +24,7 @@
       <div> <!--Este div es la columna de los cafes -->
       <ul class="space-y-8 mt-10 p-4">
         {
-        places.map((place) => {
+        Places.map((place) => {
           return (
           <li {...{ key: place.nombre }}  class="flex space-x-5">
               <div class="flex-shrink-0">

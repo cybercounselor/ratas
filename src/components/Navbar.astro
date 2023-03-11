@@ -1,10 +1,6 @@
 ---
 import Hamburger from 'hamburger-react';
 
-
-
-
-
 const items = [
   {
     title: "Home",
@@ -40,7 +36,7 @@ const items = [
 
 
 <div class=" bg-zinc-900 text-white ">
-  <div class=" header p-5 m-2 font-semibold ">RAT FRIENDLY.ORG</div>
+  <div class=" header p-3 m-2 font-semibold ">RAT FRIENDLY.ORG</div>
   
       <nav>
         <input type="checkbox" id="check"/>
@@ -85,6 +81,8 @@ const items = [
         font-size: 25px;
         color:#ffff;
         cursor: pointer;
+        position: relative;
+        z-index: 1;
       }
       .nav-menu{
         position:fixed;
@@ -125,6 +123,15 @@ const items = [
           .bar-btn{
             display: none;
           }
+          .nav-menu li:first-child a {
+    color: rgb(251 113 133);
+    background-color: #ffff;
+      }
+      .nav-menu li:first-child a:hover {
+    color:#ffff;
+    background-color: rgb(251 113 133);
+      }
+
           .nav-menu {
             position: relative;
             height: 100px;
@@ -134,6 +141,7 @@ const items = [
             text-align:right;
             margin-right: 1em;
           }
+          
           #check {display:none;
       }
           .nav-menu li {
@@ -145,12 +153,16 @@ const items = [
             .nav-menu li a{
               font-size: 20px;
               
+              
             }
             .nav-menu li a:hover{
               background-color: rgb(251 113 133);
+              
             }
             
             }
+
+            
     </style>
 
 

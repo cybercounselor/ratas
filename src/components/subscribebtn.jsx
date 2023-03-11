@@ -29,7 +29,7 @@ function Button() {
           }
         }}
       />
-      <button class="font-semibold bg-rose-500 m-2 rounded-lg p-3" onClick={handleSubscribe}>
+      <button className="font-semibold bg-rose-500 m-2 rounded-lg p-3" onClick={handleSubscribe}>
         {subscribe ? "Ya estás suscrito" : "Suscribirse"}
       </button>
       <ToastContainer />
